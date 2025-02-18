@@ -73,14 +73,13 @@
             </div>
             </noscript>
 
-            <div id="main" role="main" class="clearfix controller-Minecraft action-play">
+            <div id="main" role="main" class="clearfix controller-Site action-minecraftStore">
                 
-<section class="left">
-    <h1>Minecraft</h1>
-        <p>
-        Please <a href="/login" >log in</a> or <a href="/register" >register for a Mojang account</a> to play Minecraft.
-    </p>
-        </section>            </div>
+<script type="text/javascript">
+    var framedStoreSrc = "https://account.minecraft.net/buy/frame/register";
+</script>
+<iframe id="store-frame" height="100%" width="100%" frameborder="0" allowtransparency="true" style="display:none"></iframe>
+            </div>
         </div>
 
         <footer>
@@ -98,12 +97,11 @@
         <script>
             var recipient = 'https://account.minecraft.net';
             var loadMessageFrame = function() {
-                    $('<iframe>', {id : 'ssoFrame', src : recipient + '/message/MjdiYmRkMDQtNDYzNi00Yjc2LTlmZmItZDlkYTBjNTA0NTY5%0D%0A', frameborder : 0}).appendTo($('body'));
+                    $('<iframe>', {id : 'ssoFrame', src : recipient + '/message/NmJkMWY4NWYtYTI5OS00ZTdkLTk0OTctYmYyNmY3MjZkZGM3%0D%0A', frameborder : 0}).appendTo($('body'));
             } 
 
             if (Modernizr.postmessage) {
                 $(function() {
-                                        loadMessageFrame();
                                         
                     function receiveMessage(event) {
                         if (event) {

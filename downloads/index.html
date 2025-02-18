@@ -73,14 +73,49 @@
             </div>
             </noscript>
 
-            <div id="main" role="main" class="clearfix controller-Minecraft action-play">
+            <div id="main" role="main" class="clearfix controller-Site action-download">
                 
 <section class="left">
-    <h1>Minecraft</h1>
-        <p>
-        Please <a href="/login" >log in</a> or <a href="/register" >register for a Mojang account</a> to play Minecraft.
+    <h1>Download</h1>
+    <p>
+        When you have bought the game, you can download the stand-alone launcher for Minecraft here. It will automatically update the game files with the latest version.
+        You'll be able to play the game without an Internet connection if you've been online at least once.
     </p>
-        </section>            </div>
+        <script>var operating_system = "win";</script>
+                <div id="platform-win" class="platform">
+        <h2>Minecraft for Windows</h2>
+        <p>
+            Download and run <a href="https://launcher.mojang.com/download/MinecraftInstaller.msi" class="download-link" data-dist="client" data-platform="windows" onclick="recordOutboundLink(this, 'Downloads', 'Download-link', 'Windows-Client');return false;">Minecraft.msi</a>. This will install Minecraft and create a shortcut in your start menu. If you'd like a version without an installer, you may use <a href="https://launcher.mojang.com/download/Minecraft.exe" class="download-link" data-dist="client" data-platform="windows" onclick="recordOutboundLink(this, 'Downloads', 'Download-link', 'Windows-Client');return false;">Minecraft.exe</a> instead. You do not need Java installed to run either of these.
+        </p>
+    </div>
+    <div id="platform-win-alternative" class="platform">
+        <h2>Minecraft for Windows (alternative)</h2>
+        <p>
+            If you have issues with the new Windows download, you can try the old one by downloading <a href="https://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.exe" class="download-link" data-dist="client" data-platform="windows" onclick="recordOutboundLink(this, 'Downloads', 'Download-link', 'Windows-Client');return false;">Minecraft.exe</a>. If given the option, save the file instead of running it. Save the file anywhere you'd like, then double-click the program to run. This does require Java to be installed, however.
+        </p>
+    </div>
+    <div id="platform-osx" class="platform">
+        <h2>Minecraft for Mac OS X</h2>
+        <p>
+            Download <a href="https://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.dmg" class="download-link" data-dist="client" data-platform="osx" onclick="recordOutboundLink(this, 'Downloads', 'Download-link', 'OSX-Client');return false;">Minecraft.dmg</a>.
+        </p>
+    </div>
+    <div id="platform-linux" class="platform">
+        <h2>Minecraft for Linux / Other</h2>
+        <p>
+            Download <a href="https://s3.amazonaws.com/Minecraft.Download/launcher/Minecraft.jar" class="download-link" data-dist="client" data-platform="linux" onclick="recordOutboundLink(this, 'Downloads', 'Download-link', 'Linux-Client');return false;">Minecraft.jar (86 KB)</a>. The jar is executable and should work as-is, also please use Oracle's JVM.
+        </p>
+    </div>
+    <p class="small"><a href="#all" id="platform-all">Show all platforms</a></p>
+    <h2>Multiplayer Server</h2>
+    <p>
+        If you're running on Windows and just want to set up a server easily, download <a href="https://s3.amazonaws.com/Minecraft.Download/versions/1.8.1/minecraft_server.1.8.1.exe" class="download-link" data-dist="server" data-platform="windows" onclick="recordOutboundLink(this, 'Downloads', 'Download-link', 'Windows-Server');return false;">minecraft_server.1.8.1.exe</a> and run it.
+    </p>
+    <p>
+        If you want to run the server on any other OS or without GUI it's a bit more involved (see <a href="http://www.minecraftwiki.net/wiki/Setting_up_a_server">this wiki article for a tutorial</a>). First make sure you can use <span class="code">java</span> from the command line. On Linux and Mac OS X this should already be set up but on Windows you might have to tinker with the PATH environment variable. Download and run <a href="https://s3.amazonaws.com/Minecraft.Download/versions/1.8.1/minecraft_server.1.8.1.jar" class="download-link" data-dist="server" data-platform="linux" onclick="recordOutboundLink(this, 'Downloads', 'Download-link', 'Linux-Server');return false;">minecraft_server.1.8.1.jar</a> with <span class="code">java -Xmx1024M -Xms1024M -jar minecraft_server.jar nogui</span>.
+    </p>
+    </section>
+            </div>
         </div>
 
         <footer>
@@ -98,7 +133,7 @@
         <script>
             var recipient = 'https://account.minecraft.net';
             var loadMessageFrame = function() {
-                    $('<iframe>', {id : 'ssoFrame', src : recipient + '/message/MjdiYmRkMDQtNDYzNi00Yjc2LTlmZmItZDlkYTBjNTA0NTY5%0D%0A', frameborder : 0}).appendTo($('body'));
+                    $('<iframe>', {id : 'ssoFrame', src : recipient + '/message/ZTM1NDExNDUtNzA5Yi00MWI2LWJhMzktYjUwMmY4MTFhMzVj%0D%0A', frameborder : 0}).appendTo($('body'));
             } 
 
             if (Modernizr.postmessage) {

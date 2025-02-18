@@ -73,14 +73,59 @@
             </div>
             </noscript>
 
-            <div id="main" role="main" class="clearfix controller-Minecraft action-play">
+            <div id="main" role="main" class="clearfix controller-Site action-howto">
                 
 <section class="left">
-    <h1>Minecraft</h1>
-        <p>
-        Please <a href="/login" >log in</a> or <a href="/register" >register for a Mojang account</a> to play Minecraft.
+    <h2>Having issues with your account?</h2>
+    <p>
+        Are you having problems buying Minecraft or logging in? Are you getting odd error messages? Direct any account/support related issues <a href="https://help.mojang.com">here</a>.
     </p>
-        </section>            </div>
+    <h2>Creative? Survival? What’s with all the blocks?</h2>
+    <p>
+        First, the tall green things like to be stroked. Try that later for a nice surprise.
+    </p>
+    <p>
+        Minecraft is split into two separate game modes. Creative and Survival. You can play both of them in multiplayer. If you’re mostly interested in making huge structures from scratch with unlimited resources, Creative mode is your best bet. You won’t see any enemies, and you can pull blocks of all shapes and sizes out of thin air. It’s a peaceful world.
+    </p>
+    <p>
+        However, if you’d prefer to adventure into a world of danger, where you’re crafting and creating out of necessity, you’ll probably want to play in Survival mode. That comes with gangs of monsters who want to break/explode/eat your bones, one pixel at a time. You’ll need to protect yourself from the creatures that come out at night.
+    </p>
+    <h2>Community Made Tutorials</h2>
+    <p>
+        The tutorials below are made by people from our lovely community. They will get you going in no-time. If you're still clueless, you can try the <a href="https://help.mojang.com">support center</a> or one of the <a href="/community">community resources</a>.
+    </p>
+
+    <h2>The basics</h2>
+    <h3>Part 01: Controls/Options</h3>
+    <div class="videoEmbed">
+        <object width="640" height="385"><param name="movie" value="https://www.youtube.com/v/Fh5WHRKkq0k?fs=1&amp;hl=sv_SE&amp;color1=0x3a3a3a&amp;color2=0x999999"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/Fh5WHRKkq0k?fs=1&amp;hl=sv_SE&amp;color1=0x3a3a3a&amp;color2=0x999999" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed></object>
+    </div>
+    <h3>Part 02: How to Punch Trees</h3>
+    <div class="videoEmbed">
+        <object width="640" height="385"><param name="movie" value="https://www.youtube.com/v/69Lpzrz2fNM?fs=1&amp;hl=sv_SE&amp;color1=0x3a3a3a&amp;color2=0x999999"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/69Lpzrz2fNM?fs=1&amp;hl=sv_SE&amp;color1=0x3a3a3a&amp;color2=0x999999" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed></object>
+    </div>
+
+    <h3>Part 03: Crafting Basics</h3>
+    <div class="videoEmbed">
+        <object width="640" height="385"><param name="movie" value="https://www.youtube.com/v/qkP19BVYNVI?fs=1&amp;hl=sv_SE&amp;color1=0x3a3a3a&amp;color2=0x999999"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/qkP19BVYNVI?fs=1&amp;hl=sv_SE&amp;color1=0x3a3a3a&amp;color2=0x999999" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed></object></div>
+
+    <h3>Part 04: How to Use a Pick</h3>
+    <div class="videoEmbed">
+        <object width="640" height="385"><param name="movie" value="https://www.youtube.com/v/tG14R7eSS6s?fs=1&amp;hl=sv_SE&amp;color1=0x3a3a3a&amp;color2=0x999999"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="https://www.youtube.com/v/tG14R7eSS6s?fs=1&amp;hl=sv_SE&amp;color1=0x3a3a3a&amp;color2=0x999999" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="640" height="385"></embed></object>
+    </div>
+    <br />
+    <p>
+        Thanks to <a href="https://www.youtube.com/user/Coestar" target="_blank">Coestar</a> for videos above!
+    </p>
+</section>
+<aside class="right">
+        <p>
+        Haven't purchased Minecraft?
+    </p>
+    <p>
+        <a href="/store" class="button button_buy_now">Buy now</a>
+    </p>
+    </aside>            </div>
         </div>
 
         <footer>
@@ -98,7 +143,7 @@
         <script>
             var recipient = 'https://account.minecraft.net';
             var loadMessageFrame = function() {
-                    $('<iframe>', {id : 'ssoFrame', src : recipient + '/message/MjdiYmRkMDQtNDYzNi00Yjc2LTlmZmItZDlkYTBjNTA0NTY5%0D%0A', frameborder : 0}).appendTo($('body'));
+                    $('<iframe>', {id : 'ssoFrame', src : recipient + '/message/ZDA2Y2QyNzktY2U5OS00NTBiLWE1YjAtOTAyYmFmNDdhOTUx%0D%0A', frameborder : 0}).appendTo($('body'));
             } 
 
             if (Modernizr.postmessage) {
